@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 
 class TodoFormWidget extends StatelessWidget {
@@ -6,7 +7,7 @@ class TodoFormWidget extends StatelessWidget {
   final ValueChanged<String> onChangedTitle;
   final ValueChanged<String> onChangedDescription;
   final VoidCallback onSavedTodo;
-  TodoFormWidget(
+  const TodoFormWidget(
       {Key? key,
       this.title = '',
       this.description = '',
@@ -58,7 +59,7 @@ class TodoFormWidget extends StatelessWidget {
   Widget buildDescription() => TextFormField(
         maxLines: 3,
         initialValue: description,
-        onChanged: onChangedTitle,
+        onChanged: onChangedDescription,
         decoration: const InputDecoration(
           border: UnderlineInputBorder(),
           labelText: 'Description',

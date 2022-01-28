@@ -4,7 +4,7 @@ import 'package:todo_app/page/home_page.dart';
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:todo_app/provider/todos.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   static const String title = 'Todo App';
